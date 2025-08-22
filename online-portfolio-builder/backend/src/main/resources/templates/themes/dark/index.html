@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>{{fullName}} - Portfolio</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body class="dark">
+  <header>
+    <h1>{{fullName}}</h1>
+    <p>{{email}}</p>
+    <p class="summary">{{summary}}</p>
+  </header>
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <!-- expects comma separated -->
+      {{skills}}
+    </ul>
+  </section>
+  <section>
+    <h2>Projects</h2>
+    <p>{{projects}}</p>
+  </section>
+  <footer>
+    <h3>Social</h3>
+    <p>{{socialLinks}}</p>
+  </footer>
+</body>
+</html>

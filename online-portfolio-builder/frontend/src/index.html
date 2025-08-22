@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio Builder</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+    .fallback {
+      max-width: 700px;
+      margin: 80px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .fallback h1 {
+      margin: 0 0 10px;
+      font-size: 2rem;
+      color: #222;
+    }
+    .fallback h2 {
+      margin: 20px 0 5px;
+      font-size: 1.2rem;
+      color: #555;
+    }
+    .fallback p {
+      margin: 0 0 10px;
+      color: #666;
+    }
+    .loading-note {
+      margin-top: 25px;
+      font-size: 0.9rem;
+      color: #888;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <!-- Static fallback content -->
+  <div class="fallback">
+    <h1>Khushi</h1>
+    <p>Email: khushi@example.com</p>
+
+    <h2>Skills</h2>
+    <p>Angular, Spring Boot, MySQL</p>
+
+    <h2>Projects</h2>
+    <p>Online Portfolio Builder, Invoice Generator</p>
+
+    <h2>Social</h2>
+    <p>linkedin.com/in/khushi | github.com/khushi</p>
+
+    <div class="loading-note">
+      Loading Portfolio Builder App...
+    </div>
+  </div>
+
+  <!-- Angular app will replace this -->
+  <app-root></app-root>
+</body>
+</html>

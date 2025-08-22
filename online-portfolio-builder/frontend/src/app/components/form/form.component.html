@@ -1,0 +1,30 @@
+<form (ngSubmit)="preview()">
+  <label>Full Name</label>
+  <input [(ngModel)]="model.fullName" name="fullName" required/>
+
+  <label>Email</label>
+  <input [(ngModel)]="model.email" name="email" />
+
+  <label>Summary</label>
+  <textarea [(ngModel)]="model.summary" name="summary" rows="3"></textarea>
+
+  <label>Skills (comma separated)</label>
+  <textarea [(ngModel)]="model.skills" name="skills" rows="2"></textarea>
+
+  <label>Projects (text or JSON)</label>
+  <textarea [(ngModel)]="model.projects" name="projects" rows="3"></textarea>
+
+  <label>Social Links</label>
+  <textarea [(ngModel)]="model.socialLinks" name="socialLinks" rows="2"></textarea>
+
+  <label>Theme</label>
+  <select [(ngModel)]="model.theme" name="theme">
+    <option *ngFor="let t of themes" [value]="t">{{t | titlecase}}</option>
+  </select>
+
+  <div class="actions" style="margin-top:1rem">
+    <button type="submit">Preview</button>
+    <button type="button" (click)="downloadZip()">Download ZIP</button>
+    <button type="button" (click)="saveToDb()">Save</button>
+  </div>
+</form>
